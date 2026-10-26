@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Northstar Skin Studio | Practice Tracking Lab</title>
+  <meta name="description" content="A fictional clinic website for practising analytics and advertising conversion tracking.">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- TODO: Replace GTM-XXXXXXX with your GTM container ID. Keep this snippet in the <head>. -->
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');
+  </script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+  <!-- TODO: Replace GTM-XXXXXXX with your GTM container ID. Keep this immediately after <body>. -->
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Northstar Skin Studio home">
+      <span class="brand-mark">N</span><span>northstar <small>SKIN STUDIO</small></span>
+    </a>
+    <a class="header-link" href="#contact">Book a consultation <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">YOUR SKIN, YOUR PACE</p>
+        <h1>Thoughtful care.<br><em>Confident skin.</em></h1>
+        <p class="intro">A fictional skin studio created for practising website analytics, tag management, and advertising conversions.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#contact" data-cta="hero_consultation">Request a consultation</a>
+          <a class="text-link" href="#services">Explore services <span aria-hidden="true">↓</span></a>
+        </div>
+        <p class="microcopy">Practice website only. No real clinic or medical services are offered.</p>
+      </div>
+      <div class="hero-art" role="img" aria-label="Abstract sunlit shapes and botanical shadows">
+        <div class="sun"></div><div class="arch arch-one"></div><div class="arch arch-two"></div>
+        <div class="leaf leaf-one"></div><div class="leaf leaf-two"></div>
+        <span class="art-caption">CARE, CONSIDERED.</span>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="section-heading">
+        <p class="eyebrow">THE STUDIO</p>
+        <h2>Simple by design.</h2>
+        <p>Three fictional service categories to give your test page realistic structure.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card"><span>01</span><h3>Skin consultations</h3><p>Start with a conversation about goals and routines.</p></article>
+        <article class="service-card"><span>02</span><h3>Skin treatments</h3><p>Explore a tailored plan with a qualified professional.</p></article>
+        <article class="service-card"><span>03</span><h3>Hair & scalp care</h3><p>Learn about common care options and next steps.</p></article>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact-copy">
+        <p class="eyebrow">TAKE THE FIRST STEP</p>
+        <h2>Let's start with a conversation.</h2>
+        <p>Submit the demo form to trigger a test lead event. Use fake information only.</p>
+        <a class="contact-link" href="https://wa.me/910000000000?text=This%20is%20a%20tracking%20test"
+           data-cta="whatsapp" target="_blank" rel="noopener">Test WhatsApp click ↗</a>
+        <a class="contact-link" href="tel:+910000000000" data-cta="phone">Test phone click ↗</a>
+      </div>
+      <form class="lead-form" id="lead-form" action="thank-you.html" method="get">
+        <label for="name">Name</label>
+        <input id="name" name="name" autocomplete="name" required placeholder="Demo Visitor">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required placeholder="demo@example.com">
+        <label for="interest">What are you interested in?</label>
+        <select id="interest" name="interest" required>
+          <option value="">Choose one</option>
+          <option value="skin_consultation">Skin consultation</option>
+          <option value="skin_treatment">Skin treatment</option>
+          <option value="hair_scalp">Hair & scalp care</option>
+        </select>
+        <button class="button button-dark" type="submit" data-cta="form_submit">Send demo enquiry</button>
+        <p class="form-note">Use fictitious details. This demo does not send your information to a server.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer><span>© 2026 Northstar Skin Studio · Fictional practice site</span><a href="#top">Back to top ↑</a></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
